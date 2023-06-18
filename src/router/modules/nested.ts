@@ -120,8 +120,8 @@ export default {
           }
         } */
       ]
-    }
-    /* {
+    },
+    {
       path: "/nested/menu2",
       name: "Menu2",
       component: () => import("@/views/nested/menu2/index.vue"),
@@ -129,6 +129,6 @@ export default {
         title: $t("menus.hsmenu2"),
         keepAlive: true
       }
-    } */
+    }
   ]
 } as RouteConfigsTable;
