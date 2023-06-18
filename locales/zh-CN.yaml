@@ -1,153 +1,151 @@
 buttons:
   hsLoginOut: 退出系统
-  hsfullscreen: 全屏
-  hsexitfullscreen: 退出全屏
-  hsrefreshRoute: 刷新路由
-  hslogin: 登录
   hsadd: 新增
-  hsmark: 标记/取消
-  hssave: 保存
-  hssearch: 搜索
-  hsexpendAll: 全部展开
-  hscollapseAll: 全部折叠
-  hssystemSet: 打开项目配置
-  hsdelete: 删除
-  hsreload: 重新加载
+  hscloseAllTabs: 关闭全部标签页
   hscloseCurrentTab: 关闭当前标签页
   hscloseLeftTabs: 关闭左侧标签页
-  hscloseRightTabs: 关闭右侧标签页
   hscloseOtherTabs: 关闭其他标签页
-  hscloseAllTabs: 关闭全部标签页
-  hswholeFullScreen: 全屏
-  hswholeExitFullScreen: 退出全屏
-  hscontentFullScreen: 内容区全屏
+  hscloseRightTabs: 关闭右侧标签页
+  hscollapseAll: 全部折叠
   hscontentExitFullScreen: 内容区退出全屏
-menus:
-  hshome: 首页
+  hscontentFullScreen: 内容区全屏
+  hsdelete: 删除
+  hsexitfullscreen: 退出全屏
+  hsexpendAll: 全部展开
+  hsfullscreen: 全屏
   hslogin: 登录
-  hsempty: 无Layout页
-  hssysManagement: 系统管理
-  hsUser: 用户管理
-  hsRole: 角色管理
+  hsmark: 标记/取消
+  hsrefreshRoute: 刷新路由
+  hsreload: 重新加载
+  hssave: 保存
+  hssearch: 搜索
+  hssystemSet: 打开项目配置
+  hswholeExitFullScreen: 退出全屏
+  hswholeFullScreen: 全屏
+login:
+  alipayLogin: 支付宝登录
+  back: 返回
+  definite: 确定
+  forget: 忘记密码?
+  getVerifyCode: 获取验证码
+  info: 秒后重新获取
+  login: 登录
+  loginSuccess: 登录成功
+  password: 密码
+  passwordDifferentReg: 两次密码不一致!
+  passwordReg: 请输入密码
+  passwordRuleReg: 密码格式应为8-18位数字、字母、符号的任意两种组合
+  passwordSureReg: 请输入确认密码
+  passwordUpdateReg: 修改密码成功
+  phone: 手机号码
+  phoneCorrectReg: 请输入正确的手机号码格式
+  phoneLogin: 手机登录
+  phoneReg: 请输入手机号码
+  privacyPolicy: 《隐私政策》
+  qRCodeLogin: 二维码登录
+  qqLogin: QQ登录
+  readAccept: 我已仔细阅读并接受
+  register: 注册
+  registerSuccess: 注册成功
+  remember: 记住密码
+  smsVerifyCode: 短信验证码
+  sure: 确认密码
+  test: 模拟测试
+  thirdLogin: 第三方登录
+  tickPrivacy: 请勾选隐私政策
+  tip: 扫码后点击"确认"，即可完成登录
+  username: 账号
+  usernameReg: 请输入账号
+  verifyCode: 验证码
+  verifyCodeCorrectReg: 请输入正确的验证码
+  verifyCodeReg: 请输入验证码
+  verifyCodeSixReg: 请输入6位数字验证码
+  weChatLogin: 微信登录
+  weiboLogin: 微博登录
+menus:
+  externalLink: 平台文档（外链）
+  hsAble: 功能
+  hsAbout: 关于
+  hsBarcode: 条形码
+  hsCascader: 区域级联选择器
+  hsChildMenuoverflow: 菜单超出显示 Tooltip 文字提示
+  hsDebounce: 防抖节流
   hsDept: 部门管理
-  hseditor: 编辑器
+  hsDownload: 下载
+  hsEpDocument: Element Plus 文档（内嵌）
+  hsExecl: 导出Excel
+  hsExternalPage: 外部页面
+  hsFail: 失败页面
+  hsFive: "500"
+  hsFormDesign: 表单设计器
+  hsIconSelect: 图标选择器
+  hsInfiniteScroll: 表格无限滚动
+  hsLineTree: 树形连接线
+  hsList: 列表页
+  hsListCard: 卡片列表页
+  hsMenuTree: 菜单树结构
+  hsMenuoverflow: 目录超出显示 Tooltip 文字提示
+  hsOptimize: 防抖、截流、复制指令
+  hsPdf: PDF预览
+  hsPiniaDocument: Pinia 文档（内嵌）
+  hsPrint: 打印
+  hsPureDocument: 平台文档（内嵌）
+  hsPureTableBase: 基础用法（23个示例）
+  hsPureTableHigh: 高级用法（11个示例）
+  hsQrcode: 二维码
+  hsResult: 结果页面
+  hsRole: 角色管理
+  hsRouterDocument: Vue Router 文档（内嵌）
+  hsSuccess: 成功页面
+  hsSwiper: Swiper插件
+  hsTailwindcssDocument: Tailwindcss 文档（内嵌）
+  hsTimeline: 时间线
+  hsTree: 大数据树业务组件
+  hsUser: 用户管理
+  hsVirtualList: 虚拟列表
+  hsViteDocument: Vite 文档（内嵌）
+  hsVueDocument: Vue3 文档（内嵌）
+  hsWatermark: 水印
   hsabnormal: 异常页面
+  hsbutton: 按钮组件
+  hscomponents: 组件
+  hscontextmenu: 右键菜单
+  hscountTo: 数字动画
+  hscropping: 图片裁剪
+  hsdanmaku: 弹幕组件
+  hsdialog: 函数式弹框组件
+  hsdraggable: 拖拽组件
+  hseditor: 编辑器
+  hsempty: 无Layout页
+  hsflowChart: 流程图
   hsfourZeroFour: "404"
   hsfourZeroOne: "403"
-  hsFive: "500"
-  hscomponents: 组件
-  hsdialog: 函数式弹框组件
-  hsmessage: 消息提示组件
-  hsvideo: 视频组件
-  hssegmented: 分段控制器组件
-  hswaterfall: 瀑布流无限滚动组件
-  hsmap: 地图组件
-  hsdraggable: 拖拽组件
-  hssplitPane: 切割面板
-  hsbutton: 按钮组件
-  hscropping: 图片裁剪
-  hscountTo: 数字动画
-  hsselector: 选择器组件
-  hsflowChart: 流程图
-  hsseamless: 无缝滚动
-  hscontextmenu: 右键菜单
-  hstypeit: 打字机组件
+  hsguide: 引导页
+  hshome: 首页
   hsjsoneditor: JSON编辑器
-  # hsmenus: 多级菜单
-  hsmenus: 我的资产
+  hslogin: 登录
+  hsmap: 地图组件
   hsmenu1: 哈尔滨博实自动化
   hsmenu1-1: 榆林神木聚丙烯01
-  hsmenu1-2: 榆林神木聚丙烯02
   hsmenu1-1-1: 包装设备01
   hsmenu1-1-1-1: 包装设备01
   hsmenu1-1-2: 码垛设备01
   hsmenu1-1-2-1: 码垛设备01
-  # hsmenu1-3: 菜单1-3
-  # hsmenu2: 菜单2
-  permission: 权限管理
-  permissionPage: 页面权限
-  permissionButton: 按钮权限
+  hsmenu1-2: 榆林神木聚丙烯02
+  hsmenu2: 设置报警
+  hsmenus: 我的资产
+  hsmessage: 消息提示组件
+  hsseamless: 无缝滚动
+  hssegmented: 分段控制器组件
+  hsselector: 选择器组件
+  hssplitPane: 切割面板
+  hssysManagement: 系统管理
   hstabs: 标签页操作
-  hsguide: 引导页
-  hsAble: 功能
-  hsMenuTree: 菜单树结构
-  hsOptimize: 防抖、截流、复制指令
-  hsWatermark: 水印
-  hsPrint: 打印
-  hsDownload: 下载
-  hsExternalPage: 外部页面
-  hsPureDocument: 平台文档（内嵌）
-  externalLink: 平台文档（外链）
-  hsEpDocument: Element Plus 文档（内嵌）
-  hsVueDocument: Vue3 文档（内嵌）
-  hsViteDocument: Vite 文档（内嵌）
-  hsPiniaDocument: Pinia 文档（内嵌）
-  hsRouterDocument: Vue Router 文档（内嵌）
-  hsTailwindcssDocument: Tailwindcss 文档（内嵌）
-  hsAbout: 关于
-  hsResult: 结果页面
-  hsSuccess: 成功页面
-  hsFail: 失败页面
-  hsIconSelect: 图标选择器
-  hsTimeline: 时间线
-  hsLineTree: 树形连接线
-  hsList: 列表页
-  hsListCard: 卡片列表页
-  hsDebounce: 防抖节流
-  hsFormDesign: 表单设计器
-  hsBarcode: 条形码
-  hsQrcode: 二维码
-  hsCascader: 区域级联选择器
-  hsSwiper: Swiper插件
-  hsVirtualList: 虚拟列表
-  hsPdf: PDF预览
-  hsExecl: 导出Excel
-  hsInfiniteScroll: 表格无限滚动
-  hsdanmaku: 弹幕组件
-  hsPureTableBase: 基础用法（23个示例）
-  hsPureTableHigh: 高级用法（11个示例）
-  hsTree: 大数据树业务组件
-  hsMenuoverflow: 目录超出显示 Tooltip 文字提示
-  hsChildMenuoverflow: 菜单超出显示 Tooltip 文字提示
+  hstypeit: 打字机组件
+  hsvideo: 视频组件
+  hswaterfall: 瀑布流无限滚动组件
+  permission: 权限管理
+  permissionButton: 按钮权限
+  permissionPage: 页面权限
 status:
   hsLoad: 加载中...
-login:
-  username: 账号
-  password: 密码
-  verifyCode: 验证码
-  remember: 记住密码
-  sure: 确认密码
-  forget: 忘记密码?
-  login: 登录
-  thirdLogin: 第三方登录
-  phoneLogin: 手机登录
-  qRCodeLogin: 二维码登录
-  register: 注册
-  weChatLogin: 微信登录
-  alipayLogin: 支付宝登录
-  qqLogin: QQ登录
-  weiboLogin: 微博登录
-  phone: 手机号码
-  smsVerifyCode: 短信验证码
-  back: 返回
-  test: 模拟测试
-  tip: 扫码后点击"确认"，即可完成登录
-  definite: 确定
-  loginSuccess: 登录成功
-  registerSuccess: 注册成功
-  tickPrivacy: 请勾选隐私政策
-  readAccept: 我已仔细阅读并接受
-  privacyPolicy: 《隐私政策》
-  getVerifyCode: 获取验证码
-  info: 秒后重新获取
-  usernameReg: 请输入账号
-  passwordReg: 请输入密码
-  verifyCodeReg: 请输入验证码
-  verifyCodeCorrectReg: 请输入正确的验证码
-  verifyCodeSixReg: 请输入6位数字验证码
-  phoneReg: 请输入手机号码
-  phoneCorrectReg: 请输入正确的手机号码格式
-  passwordRuleReg: 密码格式应为8-18位数字、字母、符号的任意两种组合
-  passwordSureReg: 请输入确认密码
-  passwordDifferentReg: 两次密码不一致!
-  passwordUpdateReg: 修改密码成功
