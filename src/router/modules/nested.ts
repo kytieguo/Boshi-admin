@@ -54,14 +54,28 @@ export default {
             },
             {
               path: "/nested/menu1/menu1-1/menu1-1-2",
-              component: () =>
-                import("@/views/nested/menu1/menu1-1/menu1-1-2/index.vue"),
-              name: "Menu1-1-2",
+              /* component: () =>
+                import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"), */
+              // name: "Menu1-1-1",
               meta: {
-                title: $t("menus.hsmenu1-1-2"),
-                keepAlive: true
-                // extraIcon: "IF-pure-iconfont-new svg"
-              }
+                title: $t("menus.hsmenu1-1-2")
+                // keepAlive: true
+              },
+              children: [
+                {
+                  path: "/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1",
+                  component: () =>
+                    import(
+                      "@/views/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1/index.vue"
+                    ),
+                  name: "Menu1-1-2-1",
+                  meta: {
+                    title: $t("menus.hsmenu1-1-2-1"),
+                    keepAlive: true,
+                    showParent: true
+                  }
+                }
+              ]
             }
           ]
         },
