@@ -1,14 +1,14 @@
-import dayjs from "dayjs";
-import editForm from "../form.vue";
-import { handleTree } from "@/utils/tree";
+// import dayjs from "dayjs";
+import editForm from "./form.vue";
+// import { handleTree } from "@/utils/tree";
 import { message } from "@/utils/message";
 import { getDeptList } from "@/api/system";
-import { usePublicHooks } from "./hooks";
+// import { usePublicHooks } from "./hooks";
 import { addDialog } from "@/components/ReDialog";
 import { reactive, ref, onMounted, h } from "vue";
 import { type FormItemProps } from "./types";
-import { cloneDeep, isAllEmpty } from "@pureadmin/utils";
-
+import { cloneDeep } from "@pureadmin/utils";
+// import { cloneDeep, isAllEmpty } from "@pureadmin/utils";
 export function useDept() {
   const form = reactive({
     name: "",
@@ -18,42 +18,55 @@ export function useDept() {
   const formRef = ref();
   const dataList = ref([]);
   const loading = ref(true);
-  const { tagStyle } = usePublicHooks();
+  // const { tagStyle } = usePublicHooks();
 
   const columns: TableColumnList = [
     {
-      label: "部门名称",
-      prop: "name",
-      width: 180,
-      align: "left"
+      label: "点位名称",
+      prop: "position"
     },
     {
-      label: "排序",
-      prop: "sort",
-      minWidth: 70
+      label: "设备类型",
+      prop: "type"
     },
     {
-      label: "状态",
-      prop: "status",
-      minWidth: 100,
-      cellRenderer: ({ row, props }) => (
-        <el-tag size={props.size} style={tagStyle.value(row.status)}>
-          {row.status === 1 ? "启用" : "停用"}
-        </el-tag>
-      )
+      label: "时间",
+      prop: "duation"
     },
     {
-      label: "创建时间",
-      minWidth: 200,
-      prop: "createTime",
-      formatter: ({ createTime }) =>
-        dayjs(createTime).format("YYYY-MM-DD HH:mm:ss")
+      label: "级别",
+      prop: "rank"
     },
     {
-      label: "备注",
-      prop: "remark",
-      minWidth: 320
+      label: "数据类型",
+      prop: "datatype"
     },
+    {
+      label: "动作类型",
+      prop: "acttype"
+    },
+    {
+      label: "介质",
+      prop: "material"
+    },
+    {
+      label: "汇总方式",
+      prop: "sum"
+    },
+    {
+      label: "单位",
+      prop: "unit"
+    },
+    // {
+    //   label: "状态",
+    //   prop: "status",
+    //   minWidth: 100,
+    //   cellRenderer: ({ row, props }) => (
+    //     <el-tag size={props.size} style={tagStyle.value(row.status)}>
+    //       {row.status === 1 ? "启用" : "停用"}
+    //     </el-tag>
+    //   )
+    // },
     {
       label: "操作",
       fixed: "right",
@@ -75,16 +88,17 @@ export function useDept() {
   async function onSearch() {
     loading.value = true;
     const { data } = await getDeptList(); // 这里是返回一维数组结构，前端自行处理成树结构，返回格式要求：唯一id加父节点parentId，parentId取父节点id
-    let newData = data;
-    if (!isAllEmpty(form.name)) {
-      // 前端搜索部门名称
-      newData = newData.filter(item => item.name.includes(form.name));
-    }
-    if (!isAllEmpty(form.status)) {
-      // 前端搜索状态
-      newData = newData.filter(item => item.status === form.status);
-    }
-    dataList.value = handleTree(newData); // 处理成树结构
+    const newData = data;
+    // console.log(newData);
+    // if (!isAllEmpty(form.name)) {
+    //   // 前端搜索部门名称
+    //   newData = newData.filter(item => item.name.includes(form.name));
+    // }
+    // if (!isAllEmpty(form.status)) {
+    //   // 前端搜索状态
+    //   newData = newData.filter(item => item.status === form.status);
+    // }
+    dataList.value = newData; //handleTree(newData); // 处理成树结构
     setTimeout(() => {
       loading.value = false;
     }, 500);
@@ -103,19 +117,21 @@ export function useDept() {
   }
 
   function openDialog(title = "新增", row?: FormItemProps) {
+    console.log(row);
     addDialog({
-      title: `${title}部门`,
+      title: `${title} 点位: ${row.position}`,
       props: {
         formInline: {
           higherDeptOptions: formatHigherDeptOptions(cloneDeep(dataList.value)),
-          parentId: row?.parentId ?? 0,
-          name: row?.name ?? "",
-          principal: row?.principal ?? "",
-          phone: row?.phone ?? "",
-          email: row?.email ?? "",
-          sort: row?.sort ?? 0,
-          status: row?.status ?? 1,
-          remark: row?.remark ?? ""
+          alarms: row?.alarms ?? []
+          // parentId: row?.parentId ?? 0,
+          // name: row?.name ?? "",
+          // principal: row?.principal ?? "",
+          // phone: row?.phone ?? "",
+          // email: row?.email ?? "",
+          // sort: row?.sort ?? 0,
+          // status: row?.status ?? 1,
+          // remark: row?.remark ?? ""
         }
       },
       width: "40%",
@@ -127,7 +143,7 @@ export function useDept() {
         const FormRef = formRef.value.getRef();
         const curData = options.props.formInline as FormItemProps;
         function chores() {
-          message(`您${title}了部门名称为${curData.name}的这条数据`, {
+          message(`您${title}了点位名称为${curData.position}的这条数据`, {
             type: "success"
           });
           done(); // 关闭弹框

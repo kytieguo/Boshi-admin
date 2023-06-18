@@ -11,7 +11,7 @@ import Refresh from "@iconify-icons/ep/refresh";
 // import AddFill from "@iconify-icons/ri/add-circle-line";
 
 defineOptions({
-  name: "Menu1-1-2"
+  name: "Dept"
 });
 
 const formRef = ref();
@@ -88,7 +88,7 @@ const {
       </template> -->
       <template v-slot="{ size, dynamicColumns }">
         <pure-table
-          style="width: 9%; margin-left: 2%"
+          style="width: 97%; margin-left: 2%"
           ref="tableRef"
           border
           adaptive
@@ -115,10 +115,26 @@ const {
               type="primary"
               :size="size"
               :icon="useRenderIcon(EditPen)"
-              @click="openDialog('更改设置', row)"
+              @click="openDialog('修改', row)"
             >
               更改设置
             </el-button>
+            <!-- <el-popconfirm
+              :title="`是否确认删除部门名称为${row.name}的这条数据`"
+              @confirm="handleDelete(row)"
+            >
+              <template #reference>
+                <el-button
+                  class="reset-margin"
+                  link
+                  type="primary"
+                  :size="size"
+                  :icon="useRenderIcon(Delete)"
+                >
+                  删除
+                </el-button>
+              </template>
+            </el-popconfirm> -->
           </template>
         </pure-table>
       </template>
