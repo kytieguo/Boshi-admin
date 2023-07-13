@@ -23,12 +23,12 @@ function tabClick({ index }) {
       <template v-for="(item, index) of list" :key="item.key">
         <el-tab-pane :lazy="true">
           <template #label>
-            <el-tooltip
+            <!-- <el-tooltip
               :content="`（第 ${index + 1} 个示例）${item.content}`"
               placement="top-end"
-            >
-              <span>{{ item.title }}</span>
-            </el-tooltip>
+            > -->
+            <span>{{ item.title }}</span>
+            <!-- </el-tooltip> -->
           </template>
           <component v-if="selected == index" :is="item.component" />
         </el-tab-pane>
