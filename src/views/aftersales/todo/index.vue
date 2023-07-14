@@ -1,8 +1,7 @@
 <script setup lang="ts">
 import { aftersale } from "./hook";
 const{
-  openTodoDialog,
-  openDoneDialog
+  openTodoDialog
 } = aftersale();
 
 
@@ -19,15 +18,7 @@ const{
       </el-card>
     </el-col>
   </el-row>
-  <el-row>
-    <el-col>
-      <el-card class="box-card">
-        <div class="card-header">
-          <el-button class="button" text @click="openDoneDialog()">测试设备售后</el-button>
-        </div>
-      </el-card>
-    </el-col>
-  </el-row>
+
 </template>
 
 <style>
@@ -38,13 +29,13 @@ const{
 
   .card-header {
     display: flex;
-    align-items: center;
+  
     justify-content: space-between;
 
   }
 
   .text {
     font-size: 40px;
-    text-align: center;
+
   }
 </style>
