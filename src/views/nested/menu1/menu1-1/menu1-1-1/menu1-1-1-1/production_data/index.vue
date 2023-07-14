@@ -1,14 +1,14 @@
 <script setup lang="ts">
 import { ref } from "vue";
-import { useI18n } from "vue-i18n";
+// import { useI18n } from "vue-i18n";
 import { list } from "./list";
 
-defineOptions({
-  name: "Menu1-1-1-1"
-});
+// defineOptions({
+//   name: "Menu1-1-1-1"
+// });
 
 // const input = ref("");
-const { t } = useI18n();
+// const { t } = useI18n();
 const selected = ref(0);
 
 function tabClick({ index }) {
@@ -18,7 +18,7 @@ function tabClick({ index }) {
 
 <template>
   <div class="dark:text-white">
-    <p>{{ t("menus.hsmenu1-1") }}</p>
+    <!-- <p>{{ t("menus.hsmenu1-1") }}</p> -->
     <el-tabs @tab-click="tabClick">
       <template v-for="(item, index) of list" :key="item.key">
         <el-tab-pane :lazy="true">
