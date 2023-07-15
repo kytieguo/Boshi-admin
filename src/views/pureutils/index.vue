@@ -8,7 +8,7 @@ const { openDetailDialog } = alarmdetail();
 </script>
 
 <template>
-  <el-card class="box-card" style="display: flex; flex-flow: wrap">
+  <!--  <el-card class="box-card" style="display: flex; flex-flow: wrap">
     <el-row>
       <el-button type="text" @click="openDetailDialog"
         >点击打开 Dialog</el-button
@@ -19,7 +19,15 @@ const { openDetailDialog } = alarmdetail();
       <span style="margin-left: 20px" />
       <span>05-24</span>
     </el-row>
-  </el-card>
+  </el-card> -->
+  <el-button style="width: 400px; height: 70px" @click="openDetailDialog">
+    <div style="float: left">
+      <span style="margin-left: 20px; font-size: 15px">热封加热片</span>
+      <span style="margin-left: 20px">榆林神木聚丙烯01</span>
+      <span style="margin-left: 10px">包装设备01</span>
+      <span style="margin-left: 20px">05-24</span>
+    </div>
+  </el-button>
 </template>
 
 <style>
