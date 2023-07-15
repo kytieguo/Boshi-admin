@@ -29,12 +29,12 @@ export default {
           children: [
             {
               path: "/nested/menu1/menu1-1/menu1-1-1",
-              /* component: () =>
-                import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"), */
-              // name: "Menu1-1-1",
+              component: () =>
+                import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"),
+              name: "Menu1-1-1",
               meta: {
-                title: $t("menus.hsmenu1-1-1")
-                // keepAlive: true
+                title: $t("menus.hsmenu1-1-1"),
+                keepAlive: true
               },
               children: [
                 {
