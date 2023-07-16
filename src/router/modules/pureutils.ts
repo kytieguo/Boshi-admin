@@ -5,6 +5,7 @@ export default {
   path: "/pure-admin-utils",
   redirect: "/pure-admin-utils/index",
   meta: {
+    icon: "lollipop",
     title: "故障报警",
     rank: utils
   },

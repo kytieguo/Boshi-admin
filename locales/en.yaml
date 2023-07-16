@@ -1,59 +1,131 @@
 buttons:
   hsLoginOut: LoginOut
-  hsfullscreen: FullScreen
-  hsexitfullscreen: ExitFullscreen
-  hsrefreshRoute: RefreshRoute
-  hslogin: Login
   hsadd: Add
-  hsmark: Mark/Cancel
-  hssave: Save
-  hssearch: Search
-  hsexpendAll: Expand All
-  hscollapseAll: Collapse All
-  hssystemSet: Open ProjectConfig
-  hsdelete: Delete
-  hsreload: Reload
+  hscloseAllTabs: Close AllTabs
   hscloseCurrentTab: Close CurrentTab
   hscloseLeftTabs: Close LeftTabs
-  hscloseRightTabs: Close RightTabs
   hscloseOtherTabs: Close OtherTabs
-  hscloseAllTabs: Close AllTabs
-  hswholeFullScreen: FullScreen
-  hswholeExitFullScreen: ExitFull
-  hscontentFullScreen: Content FullScreen
+  hscloseRightTabs: Close RightTabs
+  hscollapseAll: Collapse All
   hscontentExitFullScreen: Content ExitFullScreen
-menus:
-  hshome: Home
+  hscontentFullScreen: Content FullScreen
+  hsdelete: Delete
+  hsexitfullscreen: ExitFullscreen
+  hsexpendAll: Expand All
+  hsfullscreen: FullScreen
   hslogin: Login
-  hsempty: Empty Page
-  hssysManagement: System Manage
-  hsUser: User Manage
-  hsRole: Role Manage
+  hsmark: Mark/Cancel
+  hsrefreshRoute: RefreshRoute
+  hsreload: Reload
+  hssave: Save
+  hssearch: Search
+  hssystemSet: Open ProjectConfig
+  hswholeExitFullScreen: ExitFull
+  hswholeFullScreen: FullScreen
+login:
+  alipayLogin: Alipay Login
+  back: Back
+  definite: Definite
+  forget: Forget Password?
+  getVerifyCode: Get VerifyCode
+  info: Seconds
+  login: Login
+  loginSuccess: Login Success
+  password: Password
+  passwordDifferentReg: The two passwords do not match!
+  passwordReg: Please enter password
+  passwordRuleReg: The password format should be any combination of 8-18 digits
+  passwordSureReg: Please enter confirm password
+  passwordUpdateReg: Password has been updated
+  phone: Phone
+  phoneCorrectReg: Please enter the correct phone number format
+  phoneLogin: Phone Login
+  phoneReg: Please enter the phone
+  privacyPolicy: Privacy Policy
+  qRCodeLogin: QRCode Login
+  qqLogin: QQ Login
+  readAccept: I have read it carefully and accept
+  register: Register
+  registerSuccess: Regist Success
+  remember: Remember Password
+  smsVerifyCode: SMS VerifyCode
+  sure: Sure Password
+  test: Mock Test
+  thirdLogin: Third Login
+  tickPrivacy: Please tick Privacy Policy
+  tip: After scanning the code, click "Confirm" to complete the login
+  username: Username
+  usernameReg: Please enter username
+  verifyCode: VerifyCode
+  verifyCodeCorrectReg: Please enter correct verify code
+  verifyCodeReg: Please enter verify code
+  verifyCodeSixReg: Please enter a 6-digit verify code
+  weChatLogin: WeChat Login
+  weiboLogin: Weibo Login
+menus:
+  externalLink: Pure Doc(External)
+  hsAble: Able
+  hsAbout: About
+  hsBarcode: Barcode
+  hsCascader: Area Cascader
+  hsChildMenuoverflow: Child Menu Overflow Show Tooltip Text
+  hsDebounce: Debounce & Throttle
   hsDept: Dept Manage
-  hseditor: Editor
+  hsDownload: Download
+  hsEpDocument: Element Plus Doc(Embedded)
+  hsExecl: Export Excel
+  hsExternalPage: External Page
+  hsFail: Fail Page
+  hsFive: "500"
+  hsFormDesign: Form Design
+  hsIconSelect: Icon Select
+  hsInfiniteScroll: Table Infinite Scroll
+  hsLineTree: LineTree
+  hsList: List Page
+  hsListCard: Card List Page
+  hsMenuTree: Menu Tree
+  hsMenuoverflow: Menu Overflow Show Tooltip Text
+  hsOptimize: Debounce、Throttle、Copy Directives
+  hsPdf: PDF Preview
+  hsPiniaDocument: Pinia Doc(Embedded)
+  hsPrint: Print
+  hsPureDocument: Pure Doc(Embedded)
+  hsPureTableBase: Base Usage
+  hsPureTableHigh: High Usage
+  hsQrcode: Qrcode
+  hsResult: Result Page
+  hsRole: Role Manage
+  hsRouterDocument: Vue Router Doc(Embedded)
+  hsSuccess: Success Page
+  hsSwiper: Swiper Plugin
+  hsTailwindcssDocument: Tailwindcss Doc(Embedded)
+  hsTimeline: Time Line
+  hsTree: Big Data Tree
+  hsUser: User Manage
+  hsVirtualList: Virtual List
+  hsViteDocument: Vite Doc(Embedded)
+  hsVueDocument: Vue3 Doc(Embedded)
+  hsWatermark: Water Mark
   hsabnormal: Abnormal Page
+  hsbutton: Button Components
+  hscenter: center
+  hscomponents: Components
+  hscontextmenu: Context Menu
+  hscountTo: Digital Animation
+  hscropping: Picture Cropping
+  hsdanmaku: Danmaku Components
+  hsdialog: Dialog Components
+  hsdraggable: Draggable Components
+  hseditor: Editor
+  hsempty: Empty Page
+  hsflowChart: Flow Chart
   hsfourZeroFour: "404"
   hsfourZeroOne: "403"
-  hsFive: "500"
-  hscomponents: Components
-  hsdialog: Dialog Components
-  hsmessage: Message Tips Components
-  hsvideo: Video Components
-  hssegmented: Segmented Components
-  hswaterfall: Waterfall Components
-  hsmap: Map Components
-  hsdraggable: Draggable Components
-  hssplitPane: Split Pane
-  hsbutton: Button Components
-  hscropping: Picture Cropping
-  hscountTo: Digital Animation
-  hsselector: Selector Components
-  hsflowChart: Flow Chart
-  hsseamless: Seamless Scroll
-  hscontextmenu: Context Menu
-  hstypeit: Typeit Components
+  hsguide: Guide
+  hshome: Home
   hsjsoneditor: JSON Editor
-  hsmenus: MultiLevel Menu
+  hslogin: Login
+  hsmap: Map Components
   hsmenu1: Menu1
   hsmenu1-1: Menu1-1
   hsmenu1-2: Menu1-2
@@ -61,90 +133,19 @@ menus:
   hsmenu1-2-2: Menu1-2-2
   hsmenu1-3: Menu1-3
   hsmenu2: Menu2
-  permission: Permission Manage
-  permissionPage: Page Permission
-  permissionButton: Button Permission
+  hsmenus: MultiLevel Menu
+  hsmessage: Message Tips Components
+  hsseamless: Seamless Scroll
+  hssegmented: Segmented Components
+  hsselector: Selector Components
+  hssplitPane: Split Pane
+  hssysManagement: System Manage
   hstabs: Tabs Operate
-  hsguide: Guide
-  hsAble: Able
-  hsMenuTree: Menu Tree
-  hsOptimize: Debounce、Throttle、Copy Directives
-  hsWatermark: Water Mark
-  hsPrint: Print
-  hsDownload: Download
-  hsExternalPage: External Page
-  hsPureDocument: Pure Doc(Embedded)
-  externalLink: Pure Doc(External)
-  hsEpDocument: Element Plus Doc(Embedded)
-  hsVueDocument: Vue3 Doc(Embedded)
-  hsViteDocument: Vite Doc(Embedded)
-  hsPiniaDocument: Pinia Doc(Embedded)
-  hsRouterDocument: Vue Router Doc(Embedded)
-  hsTailwindcssDocument: Tailwindcss Doc(Embedded)
-  hsAbout: About
-  hsResult: Result Page
-  hsSuccess: Success Page
-  hsFail: Fail Page
-  hsIconSelect: Icon Select
-  hsTimeline: Time Line
-  hsLineTree: LineTree
-  hsList: List Page
-  hsListCard: Card List Page
-  hsDebounce: Debounce & Throttle
-  hsFormDesign: Form Design
-  hsBarcode: Barcode
-  hsQrcode: Qrcode
-  hsCascader: Area Cascader
-  hsSwiper: Swiper Plugin
-  hsVirtualList: Virtual List
-  hsPdf: PDF Preview
-  hsExecl: Export Excel
-  hsInfiniteScroll: Table Infinite Scroll
-  hsdanmaku: Danmaku Components
-  hsPureTableBase: Base Usage
-  hsPureTableHigh: High Usage
-  hsTree: Big Data Tree
-  hsMenuoverflow: Menu Overflow Show Tooltip Text
-  hsChildMenuoverflow: Child Menu Overflow Show Tooltip Text
+  hstypeit: Typeit Components
+  hsvideo: Video Components
+  hswaterfall: Waterfall Components
+  permission: Permission Manage
+  permissionButton: Button Permission
+  permissionPage: Page Permission
 status:
   hsLoad: Loading...
-login:
-  username: Username
-  password: Password
-  verifyCode: VerifyCode
-  remember: Remember Password
-  sure: Sure Password
-  forget: Forget Password?
-  login: Login
-  thirdLogin: Third Login
-  phoneLogin: Phone Login
-  qRCodeLogin: QRCode Login
-  register: Register
-  weChatLogin: WeChat Login
-  alipayLogin: Alipay Login
-  qqLogin: QQ Login
-  weiboLogin: Weibo Login
-  phone: Phone
-  smsVerifyCode: SMS VerifyCode
-  back: Back
-  test: Mock Test
-  tip: After scanning the code, click "Confirm" to complete the login
-  definite: Definite
-  loginSuccess: Login Success
-  registerSuccess: Regist Success
-  tickPrivacy: Please tick Privacy Policy
-  readAccept: I have read it carefully and accept
-  privacyPolicy: Privacy Policy
-  getVerifyCode: Get VerifyCode
-  info: Seconds
-  usernameReg: Please enter username
-  passwordReg: Please enter password
-  verifyCodeReg: Please enter verify code
-  verifyCodeCorrectReg: Please enter correct verify code
-  verifyCodeSixReg: Please enter a 6-digit verify code
-  phoneReg: Please enter the phone
-  phoneCorrectReg: Please enter the correct phone number format
-  passwordRuleReg: The password format should be any combination of 8-18 digits
-  passwordSureReg: Please enter confirm password
-  passwordDifferentReg: The two passwords do not match!
-  passwordUpdateReg: Password has been updated

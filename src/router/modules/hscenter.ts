@@ -1,48 +1,21 @@
 import { $t } from "@/plugins/i18n";
-import { components } from "@/router/enums";
+import { hscenter } from "@/router/enums";
 
 export default {
-  path: "/worksheet",
-  redirect: "/worksheet/plan",
+  path: "/hscenter",
+  redirect: "/hscenter/index",
   meta: {
-    icon: "menu",
-    title: "工单管理",
-    rank: components
+    icon: "role",
+    title: $t("menus.hscenter"),
+    rank: hscenter
   },
   children: [
     {
-      path: "/worksheet/aftersales",
-      name: "aftersales",
-      component: () => import("@/views/worksheet/aftersales/index.vue"),
+      path: "/center/main",
+      name: "mymain",
+      component: () => import("@/views/center/main/index.vue"),
       meta: {
-        title: $t("售后工单"),
-        keepAlive: true
-      }
-    },
-    {
-      path: "/worksheet/onsite",
-      name: "onsite",
-      component: () => import("@/views/worksheet/onsite/index.vue"),
-      meta: {
-        title: $t("现场工单"),
-        keepAlive: true
-      }
-    },
-    {
-      path: "/worksheet/alarm",
-      name: "alarm",
-      component: () => import("@/views/worksheet/alarm/index.vue"),
-      meta: {
-        title: $t("报警工单"),
-        keepAlive: true
-      }
-    },
-    {
-      path: "/worksheet/plan",
-      name: "plan",
-      component: () => import("@/views/worksheet/plan/index.vue"),
-      meta: {
-        title: $t("计划工单"),
+        title: $t("个人中心"),
         keepAlive: true
       }
     }
