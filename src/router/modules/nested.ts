@@ -11,124 +11,106 @@ export default {
   },
   children: [
     {
-      path: "/nested/menu1",
+      path: "/nested/menu1/menu1-1",
+      component: () => import("@/views/nested/menu1/menu1-1/index.vue"),
+      name: "Menu1-1",
       meta: {
-        title: $t("menus.hsmenu1"),
+        title: $t("menus.hsmenu1-1"),
         keepAlive: true
       },
-      redirect: "/nested/menu1/menu1-1",
       children: [
         {
-          path: "/nested/menu1/menu1-1",
-          component: () => import("@/views/nested/menu1/menu1-1/index.vue"),
-          name: "Menu1-1",
+          path: "/nested/menu1/menu1-1/menu1-1-1",
+          component: () =>
+            import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"),
+          name: "Menu1-1-1",
           meta: {
-            title: $t("menus.hsmenu1-1"),
+            title: $t("menus.hsmenu1-1-1"),
             keepAlive: true
           },
           children: [
             {
-              path: "/nested/menu1/menu1-1/menu1-1-1",
+              path: "/nested/menu1/menu1-1/menu1-1-1/menu1-1-1-1",
               component: () =>
-                import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"),
-              name: "Menu1-1-1",
+                import(
+                  "@/views/nested/menu1/menu1-1/menu1-1-1/menu1-1-1-1/index.vue"
+                ),
+              name: "Menu1-1-1-1",
               meta: {
-                title: $t("menus.hsmenu1-1-1"),
-                keepAlive: true
-              },
-              children: [
-                {
-                  path: "/nested/menu1/menu1-1/menu1-1-1/menu1-1-1-1",
-                  component: () =>
-                    import(
-                      "@/views/nested/menu1/menu1-1/menu1-1-1/menu1-1-1-1/index.vue"
-                    ),
-                  name: "Menu1-1-1-1",
-                  meta: {
-                    title: $t("menus.hsmenu1-1-1-1"),
-                    keepAlive: true,
-                    showParent: true
-                  }
-                }
-              ]
-            },
-            {
-              path: "/nested/menu1/menu1-1/menu1-1-2",
-              /* component: () =>
-                import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"), */
-              // name: "Menu1-1-1",
-              meta: {
-                title: $t("menus.hsmenu1-1-2")
-                // keepAlive: true
-              },
-              children: [
-                {
-                  path: "/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1",
-                  component: () =>
-                    import(
-                      "@/views/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1/index.vue"
-                    ),
-                  name: "Menu1-1-2-1",
-                  meta: {
-                    title: $t("menus.hsmenu1-1-2-1"),
-                    keepAlive: true,
-                    showParent: true
-                  }
-                }
-              ]
+                title: $t("menus.hsmenu1-1-1-1"),
+                keepAlive: true,
+                showParent: true
+              }
             }
           ]
         },
         {
-          path: "/nested/menu1/menu1-2",
-          redirect: "/nested/menu1/menu1-2/menu1-2-1",
+          path: "/nested/menu1/menu1-1/menu1-1-2",
+          /* component: () =>
+            import("@/views/nested/menu1/menu1-1/menu1-1-1/index.vue"), */
+          // name: "Menu1-1-1",
           meta: {
-            title: $t("menus.hsmenu1-2"),
-            keepAlive: true
-          }
-          /* children: [
+            title: $t("menus.hsmenu1-1-2")
+            // keepAlive: true
+          },
+          children: [
             {
-              path: "/nested/menu1/menu1-2/menu1-2-1",
+              path: "/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1",
               component: () =>
-                import("@/views/nested/menu1/menu1-2/menu1-2-1/index.vue"),
-              name: "Menu1-2-1",
+                import(
+                  "@/views/nested/menu1/menu1-1/menu1-1-1/menu1-1-2-1/index.vue"
+                ),
+              name: "Menu1-1-2-1",
               meta: {
-                title: $t("menus.hsmenu1-2-1"),
-                keepAlive: true
-              }
-            },
-            {
-              path: "/nested/menu1/menu1-2/menu1-2-2",
-              component: () =>
-                import("@/views/nested/menu1/menu1-2/menu1-2-2/index.vue"),
-              name: "Menu1-2-2",
-              meta: {
-                title: $t("menus.hsmenu1-2-2"),
+                title: $t("menus.hsmenu1-1-2-1"),
                 keepAlive: true,
-                extraIcon: "IF-pure-iconfont-new svg"
+                showParent: true
               }
             }
-          ] */
+          ]
         }
-        /* {
-          path: "/nested/menu1/menu1-3",
-          component: () => import("@/views/nested/menu1/menu1-3/index.vue"),
-          name: "Menu1-3",
-          meta: {
-            title: $t("menus.hsmenu1-3"),
-            keepAlive: true
-          }
-        } */
       ]
-    },
-    {
-      path: "/nested/menu2",
-      name: "Menu2",
-      component: () => import("@/views/nested/menu2/index.vue"),
+    }
+    // ,
+    // {
+    //   path: "/nested/menu1/menu1-2",
+    //   redirect: "/nested/menu1/menu1-2/menu1-2-1",
+    //   meta: {
+    //     title: $t("menus.hsmenu1-2"),
+    //     keepAlive: true
+    //   }
+    //   /* children: [
+    //     {
+    //       path: "/nested/menu1/menu1-2/menu1-2-1",
+    //       component: () =>
+    //         import("@/views/nested/menu1/menu1-2/menu1-2-1/index.vue"),
+    //       name: "Menu1-2-1",
+    //       meta: {
+    //         title: $t("menus.hsmenu1-2-1"),
+    //         keepAlive: true
+    //       }
+    //     },
+    //     {
+    //       path: "/nested/menu1/menu1-2/menu1-2-2",
+    //       component: () =>
+    //         import("@/views/nested/menu1/menu1-2/menu1-2-2/index.vue"),
+    //       name: "Menu1-2-2",
+    //       meta: {
+    //         title: $t("menus.hsmenu1-2-2"),
+    //         keepAlive: true,
+    //         extraIcon: "IF-pure-iconfont-new svg"
+    //       }
+    //     }
+    //   ] */
+    // }
+    /* {
+      path: "/nested/menu1/menu1-3",
+      component: () => import("@/views/nested/menu1/menu1-3/index.vue"),
+      name: "Menu1-3",
       meta: {
-        title: $t("menus.hsmenu2"),
+        title: $t("menus.hsmenu1-3"),
         keepAlive: true
       }
-    }
+    } */
   ]
 } as RouteConfigsTable;
